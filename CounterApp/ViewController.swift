@@ -8,29 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    private var num: Int = 0
-    
-    @IBOutlet weak var counter: UILabel!
-    @IBOutlet weak var minusButton: UIButton!
-    @IBOutlet weak var plusButton: UIButton!
-    
-    
-    @IBAction func minusAction(_ sender: UIButton) {
-        self.num -= 1
-        counter.text = "\(self.num)"
-    }
-    @IBAction func plusAction(_ sender: UIButton) {
-        self.num += 1
-        counter.text = "\(self.num)"
-    }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
 
+        // Do any additional setup after loading the view.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-
